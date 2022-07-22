@@ -1,8 +1,6 @@
 class Solution:
-    def singleNumber(self, numList: List[int]) -> int:
-        singleNum = int
-        for i in range(len(numList)):
-            if numList.count(numList[i]) == 1:
-                singleNum = numList[i]
-                break
-        return singleNum
+    def singleNumber(self, num_list: List[int]) -> int:
+        c = Counter(num_list)
+        for num in c:
+            if c[num] == 1:
+                return num
