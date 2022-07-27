@@ -1,15 +1,18 @@
 class Solution:
-    def plusOne(self, digits: List[int]) -> List[int]:
-        for i in range(len(digits)):
-            digits[i] = str(digits[i])
+    def plusOne(self, num_list: List[int]) -> List[int]:
+        new = [str(i) for i in num_list]  # convert list of ints into list of strings
 
-        digits = ''.join(digits)
-        digits = int(digits)
-        digits += 1
+        new = ''.join(new)  # convert list of strings to single string
 
-        digits = str(digits)
-        digits = list(digits)
+        new = int(new)  # convert string to int
 
-        for i in range(len(digits)):
-            digits[i] = int(digits[i])
-        return digits
+        new += 1  # increment by 1
+
+        new = str(new)  # convert int back to string
+
+        new = list(new)  # convert string into list
+
+        for i in range(len(new)):  # convert each individual item to an int
+            new[i] = int(new[i])
+
+        return new
