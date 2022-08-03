@@ -1,13 +1,13 @@
 class Solution:
-    def isAnagram(self, s: str, t: str) -> bool:
+    def isAnagram(self, word1: str, word2: str) -> bool:
+        if len(word1) != len(word2):
+            return False
+        word_1_letters = Counter(word1)
+        word_2_letters = Counter(word2)
         anagram = True
-        i = 0
-        if len(s) != len(t):
-            anagram = False
-        while i < len(s) and anagram is True:
-            if s.count(s[i]) != t.count(s[i]):
+        for letter in word_1_letters:
+            if word_1_letters[letter] != word_2_letters[letter]:
                 anagram = False
                 break
-            i += 1
         return anagram
         
