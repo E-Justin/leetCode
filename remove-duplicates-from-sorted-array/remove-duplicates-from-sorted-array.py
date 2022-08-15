@@ -1,6 +1,8 @@
 class Solution:
-    def removeDuplicates(self, numList: List[int]) -> int:
-        for num in numList:
-            while numList.count(num) > 1:
-                numList.remove(num)
-        return len(numList)
+    def removeDuplicates(self, num_list: List[int]) -> int:
+        c = Counter(num_list)
+        for num in c:
+            while c[num] > 1:
+                num_list.remove(num)
+                c[num] -= 1
+        return len(num_list)
