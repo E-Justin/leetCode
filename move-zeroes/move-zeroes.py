@@ -3,9 +3,10 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        c = Counter(num_list)
-        while c[0] != 0:
+        count = num_list.count(0)
+
+        while count != 0:
             num_list.remove(0)
             num_list.append(0)
-            c[0] -= 1
-        return num_list
+            count -= 1
+        return(num_list)
