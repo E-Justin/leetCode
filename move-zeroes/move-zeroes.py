@@ -1,12 +1,11 @@
 class Solution:
-    def moveZeroes(self, numList: List[int]) -> None:
+    def moveZeroes(self, num_list: List[int]) -> None:
         """
         Do not return anything, modify nums in-place instead.
         """
-        zeros = numList.count(0)
-
-        for i in range(zeros):
-            numList.remove(0)
-            numList.append(0)
-
-        return numList
+        c = Counter(num_list)
+        while c[0] != 0:
+            num_list.remove(0)
+            num_list.append(0)
+            c[0] -= 1
+        return num_list
