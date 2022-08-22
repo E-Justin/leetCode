@@ -1,24 +1,24 @@
 <h2>  Two Sum</h2><hr><div><p>Given an array of integers <code>nums</code>&nbsp;and an integer <code>target</code>, return <em>indices of the two numbers such that they add up to <code>target</code></em>.</p>
 
-<p>You may assume that each input would have <strong><em><span class="tou-node" id="tou-1.0.0-3a48bcf8-92e0-4b6e-a048-cc658357eec0"></span></em> one <span class="tou-node" id="tou-1.1-2b94ebea-0ee0-4fe3-b6b7-23076ded3492" lang="es"></span></strong>, and you may not use the <em>same</em> element twice.</p>
+<p>You may assume that each input would have <strong><em><span class="tou-node" id="tou-1.0.0-421be472-3c80-460b-a214-9cc4ca07435e" lang="es"></span></em> one <span class="tou-node" id="tou-1.1-594823c1-feb0-4528-8200-f875a79e4c31"></span></strong>, and you may not use the <em>same</em> element twice.</p>
 
 <p>You can return the answer in any order.</p>
 
 <p>&nbsp;</p>
-<p><strong><span class="tou-node" id="tou-0.0-94d3a497-d32a-44f1-8689-f9e95f4b6239" lang="es"></span> 1:</strong></p>
+<p><strong><span class="tou-node" id="tou-0.0-b596cd79-8feb-4f6e-9f14-240f481f3508" lang="es"></span> 1:</strong></p>
 
 <pre><strong>Input:</strong> nums = [2,7,11,15], target = 9
 <strong>Output:</strong> [0,1]
 <strong>Explanation:</strong> Because nums[0] + nums[1] == 9, we return [0, 1].
 </pre>
 
-<p><strong><span class="tou-node" id="tou-0.0-cd28205d-9ad4-49eb-ab39-4e015cb323c3" lang="es"></span> 2:</strong></p>
+<p><strong><span class="tou-node" id="tou-0.0-45e39f17-acc3-4892-acc9-46958f12ee96"></span> 2:</strong></p>
 
 <pre><strong>Input:</strong> nums = [3,2,4], target = 6
 <strong>Output:</strong> [1,2]
 </pre>
 
-<p><strong><span class="tou-node" id="tou-0.0-b7590c89-2d7a-4d61-a0c1-ccfdf78336ef" lang="es"></span> 3:</strong></p>
+<p><strong><span class="tou-node" id="tou-0.0-83de078b-9512-43e3-9eaf-dbfe743108cf" lang="es"></span> 3:</strong></p>
 
 <pre><strong>Input:</strong> nums = [3,3], target = 6
 <strong>Output:</strong> [0,1]
