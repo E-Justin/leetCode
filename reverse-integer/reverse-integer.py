@@ -1,14 +1,16 @@
 class Solution:
-    def reverse(self, number: int) -> int:
-        negative = False
-        if number < 0:
+    def reverse(self, num: int) -> int:
+        if num < 0:
             negative = True
-            number = abs(number)
-        number = str(number)
-        number = number[::-1]
-        number = int(number)
+        else:
+            negative = False
         if negative is True:
-            number = 0 - number
-        if number <= -2**31 or number >= 2**31 - 1:
-         return 0
-        return number
+            num = abs(num)
+        num = str(num)
+        num = num[::-1]
+        num = int(num)
+        if negative is True:
+            num = 0 - num
+        if not -2147483648 <num< 2147483648:
+            return 0
+        return (num)
