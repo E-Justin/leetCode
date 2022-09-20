@@ -1,16 +1,37 @@
 class Solution:
     def reverse(self, num: int) -> int:
+        # if num is negative
         if num < 0:
             negative = True
+            # get absolute value (remove negative)
+            num = abs(num)
         else:
             negative = False
-        if negative is True:
-            num = abs(num)
+        
+        # int to string
         num = str(num)
-        num = num[::-1]
+        # string to list
+        num = list(num)
+        
+        # get middle index
+        mid = len(num) // 2
+        j = - 1
+        
+        # reverse items in list
+        for i in range(mid):
+            num[i], num[j] = num[j], num[i]
+            j -= 1
+        
+        # list to string
+        num = ''.join(num)
+        # string to int
         num = int(num)
+        
+        # if negative, insert negative sign at front
         if negative is True:
             num = 0 - num
-        if not -2147483648 <num< 2147483648:
+            
+        if -2**31 - 1 >= num or num >= 2**31 - 1:
             return 0
-        return (num)
+
+        return num
