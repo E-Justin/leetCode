@@ -1,13 +1,13 @@
 <h2>  Contains Duplicate</h2><hr><div><p>Given an integer array <code>nums</code>, return <code>true</code> if any value appears <strong>at least twice</strong> in the array, and return <code>false</code> if every element is distinct.</p>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example"><span class="tou-node" id="tou-0.0-7fdd771e-ff04-444b-a209-0d647b25a892" lang="es"></span> 1:</strong></p>
 <pre><strong>Input:</strong> nums = [1,2,3,1]
 <strong>Output:</strong> true
-</pre><p><strong><span class="tou-node" id="tou-0.0-2b58e3ae-1935-430e-97fc-ce4f369e972b" lang="es"></span> 2:</strong></p>
+</pre><p><strong class="example"><span class="tou-node" id="tou-0.0-01519100-6326-4547-97ed-6426606b6d77"></span> 2:</strong></p>
 <pre><strong>Input:</strong> nums = [1,2,3,4]
 <strong>Output:</strong> false
-</pre><p><strong>Example 3:</strong></p>
+</pre><p><strong class="example"><span class="tou-node" id="tou-0.0-a20f3d6c-ea7c-4622-9b93-350adfe64170" lang="es"></span> 3:</strong></p>
 <pre><strong>Input:</strong> nums = [1,1,1,3,3,4,3,2,4,2]
 <strong>Output:</strong> true
 </pre>
