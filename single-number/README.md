@@ -1,15 +1,15 @@
 <h2>  Single Number</h2><hr><div><p>Given a <strong>non-empty</strong>&nbsp;array of integers <code>nums</code>, every element appears <em>twice</em> except for one. Find that single one.</p>
 
-<p>You must&nbsp;implement a <span class="tou-node" id="tou-0-8cddc08c-b1e7-4f31-a5d3-21c6fbf5fb41" lang="es"></span> with a linear <span class="tou-node" id="tou-0-1081e68f-d5cb-46de-800e-547363cffcde" lang="es"></span> complexity and use&nbsp;only constant&nbsp;extra space.</p>
+<p>You must&nbsp;implement a solution with a linear <span class="tou-node" id="tou-0-d989a894-ed7d-4fb8-8417-0bd700127526" lang="es"></span> complexity and use&nbsp;only constant&nbsp;extra space.</p>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 <pre><strong>Input:</strong> nums = [2,2,1]
 <strong>Output:</strong> 1
-</pre><p><strong>Example 2:</strong></p>
+</pre><p><strong class="example">Example 2:</strong></p>
 <pre><strong>Input:</strong> nums = [4,1,2,1,2]
 <strong>Output:</strong> 4
-</pre><p><strong>Example 3:</strong></p>
+</pre><p><strong class="example">Example 3:</strong></p>
 <pre><strong>Input:</strong> nums = [1]
 <strong>Output:</strong> 1
 </pre>
