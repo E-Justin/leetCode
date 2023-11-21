@@ -1,5 +1,5 @@
-// 4ms
-// 6.54 MB
+// 5ms
+// 6.35 MB
 
 int removeElement(int* nums, int numsSize, int val){
     // run through list
@@ -13,7 +13,7 @@ int removeElement(int* nums, int numsSize, int val){
             return k;
         }
     }
-    if (!numsSize) {
+    else if (!numsSize) {
         return 0;
     }
 
