@@ -1,30 +1,24 @@
-// 5ms
-// 6.35 MB
+// 0ms : Beats 100% of users with C
+// 5.97 MB : Beats 98.81% of users with C
 
-int removeElement(int* nums, int numsSize, int val){
-    // run through list
-    int k = numsSize;
+#include <stdio.h>
+#include <stdlib.h>
 
-    if (numsSize == 1) {
-        if (nums[0] == val) {
-            return 0;
-        }
-        else {
-            return k;
-        }
-    }
-    else if (!numsSize) {
-        return 0;
-    }
+int 
+removeElement(int* nums, int numsSize, int val){
+int k = numsSize;
 
-    // run through list
-    for (int i = 0; i < k; i++) {
+    // run through each element
+    for (int i = 0; i < numsSize; i++) {
 
-        while (nums[i] == val) {
-            // move element to end
-            nums[i] = nums[k -1];
-            nums[k -1] = 99;
-            k--;
+        // if val was found
+        while (nums[i] == val ) {
+            
+            // move to end
+            nums[i] = nums[k - 1];
+            nums[k - 1] = 101;
+            k--; // decrement k (one less element)
+            
         }
     }
 
