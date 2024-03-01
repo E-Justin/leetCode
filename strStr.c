@@ -1,3 +1,28 @@
+// 2ms
+// 5.8 MB
+
+#include <string.h>
+#include <stdio.h>
+
+int strStr(char* haystack, char* needle) {
+    size_t n_len = strlen(needle);
+    size_t h_len = strlen(haystack);
+    int ret = -1;
+
+    for (int i = 0; i < h_len; i++) {
+        // if a match was found
+        if (strncmp((haystack + i), needle, n_len) == 0) {
+            ret = i; // get index
+            break;
+        }
+    }
+
+    return ret;
+}
+
+
+//3ms
+//5.7 MB
 int strStr(char * haystack, char * needle){
     size_t n_haystack = strlen(haystack);
     size_t n_needle = strlen(needle);
