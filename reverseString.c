@@ -1,19 +1,16 @@
-// 48 ms
-// 12.1 MB
+// 40 ms
+// 12.4 MB
 
 #include <stdio.h>
 
 void
-reverseString(char* s, int size) {
-    int end = size - 1;
+reverseString(char* s, int sSize) {
     char temp;
-
-    for (int i = 0; i < size / 2; i++) {
-        temp = s[i];
-        s[i] = s[end];
+    for (int front = 0, end = sSize -1; front < sSize / 2; front++, end--) {
+        temp = s[front];
+        s[front] = s[end];
         s[end] = temp;
-        end--;
-        
     }
 
+    return;
 }
