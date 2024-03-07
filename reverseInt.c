@@ -40,3 +40,35 @@ reverse(int x) {
     return (int)ret;
 	
 }
+
+// 5ms
+// 5.6 MB
+
+int 
+reverseInt(int x) {
+    long long copy = x;
+    long long  pv = 1;
+    int n_digits = 0;
+    int ret = 0;
+
+    // get n_digits and place value
+    for (int i = 0; copy; i++) {
+        if (i != 0) {
+            pv *= 10;
+        }
+        n_digits++;
+
+        copy /= 10;
+    }
+
+    // reverse int
+    for (int i = 0; x; i++) {
+        copy += (x % 10) * pv;
+        pv /= 10;
+        x /= 10;
+    }
+
+    ret = copy > INT_MAX || copy < INT_MIN ? 0 : copy;
+
+    return ret;
+}
