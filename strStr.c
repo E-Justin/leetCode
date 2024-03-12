@@ -1,5 +1,5 @@
-// 2ms
-// 5.8 MB
+// 0ms   beats 100% of c submissions
+// 5.6 MB
 
 #include <string.h>
 #include <stdio.h>
