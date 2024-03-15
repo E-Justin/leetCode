@@ -10,5 +10,7 @@ deleteNode(struct node* node) {
 
 	node->next = temp->next;
 
+	free(temp);
+
 	return;
 }
