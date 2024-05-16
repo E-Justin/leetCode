@@ -1,10 +1,48 @@
-// 4ms
-// 5.9 mb
-
 #include <stdlib.h>
 #include <stdboo.h>
 #include <string.h>
 
+
+// 0ms : beats 100.00 % of submissions!
+// 6 MB
+bool
+is_anagrm(char* s, char* t) {
+	bool is_anagram = true;
+	
+	do {
+
+		if (strlen(s) != strlen(t)) {
+			is_anagram = false;
+			break;
+		}
+
+		int char_count_s[123] = { 0 };
+		int char_count_t[123] = { 0 };
+
+		for (int i = 0; s[i]; i++) {
+			char_count_s[s[i]]++;
+			char_count_t[t[i]]++;
+		}
+
+		for (int i = 0; s[i]; i++) {
+			printf("Checking %c\n", s[i]);
+			printf("Count = %d and %d\n", char_count_s[s[i]], char_count_t[s[i]]);
+
+			if (char_count_s[s[i]] != char_count_t[s[i]]) {
+				is_anagram = false;
+				break;
+			}
+		}
+
+
+	} while (0);
+
+	return is_anagram;
+}
+
+
+// 4ms
+// 5.9 mb
 bool
 is_anagram(char* s, char* t) {
     int s_char_count[256] = { 0 };
