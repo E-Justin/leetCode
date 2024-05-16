@@ -6,7 +6,7 @@
 // 0ms : beats 100.00 % of submissions!
 // 6 MB
 bool
-is_anagrm(char* s, char* t) {
+isAnagram(char* s, char* t) {
 	bool is_anagram = true;
 	
 	do {
