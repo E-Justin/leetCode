@@ -36,14 +36,18 @@ int firstUniqeChar(char* s) {
 }
 
 
-// 12ms
-// 7.1 MB
+// 4ms
+// 7.2 MB
 int 
 first_unique_char(char* s) {
 
 	// ascii letters end at 122
 	int chars[123] = { 0 };
 	int ret = 0;
+
+	if (strlen(s) == 0){
+		return ret;
+	}
 
 	// tally each char
 	for (int i = 0; s[i]; i++) {
