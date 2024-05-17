@@ -1,9 +1,8 @@
-// 0ms       beats 100% of c submissions
-// 5.6 MB
-
 #include <limits.h>
 #include <stdio.h>
 
+// 0ms       beats 100% of c submissions
+// 5.6 MB
 int
 myAtoi(char* s) {
     long long num;
