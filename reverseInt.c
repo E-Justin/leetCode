@@ -1,10 +1,41 @@
-// 2ms
-// 6.24 MB
+
 
 #include <stdlib.h>
 #include <stdio.h>
 #include <limits.h>
 
+// 0ms (beats 100%)
+// 8.6 MB
+int 
+revInt(int x) {
+	int ret = x;
+	long long pv = 1;
+
+	// get place value
+	for (int i = 0; ret; i++) {
+		ret /= 10;
+
+		if (i != 0) {
+			pv *= 10;
+		}
+	}
+
+	// reverse int
+	while (x) {
+		ret += pv * (x % 10);
+		pv /= 10;
+		x /= 10;
+	}
+	
+	//    if outside of int range, return 0, else ret
+	ret = ret > INT_MAX || ret < INT_MIN ? 0 : ret;
+
+	return ret;
+}
+
+
+// 2ms
+// 6.24 MB
 int
 reverse(int x) {
     int n_digits = 0;
