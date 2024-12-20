@@ -1,15 +1,14 @@
-// 40 ms
-// 12.4 MB
+// 0 ms (beats 100.00% of C submissions)
+// 17.2 MB
 
 #include <stdio.h>
 
 void
 reverseString(char* s, int sSize) {
-    char temp;
-    for (int front = 0, end = sSize -1; front < sSize / 2; front++, end--) {
-        temp = s[front];
-        s[front] = s[end];
-        s[end] = temp;
+    for (int i = 0, j = sSize - 1; i < sSize / 2; i++, j--) {
+        char temp = s[i];
+        s[i] = s[j];
+        s[j] = temp;
     }
 
     return;
