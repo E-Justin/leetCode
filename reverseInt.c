@@ -3,6 +3,25 @@
 #include <limits.h>
 
 // 0ms (beats 100%)
+// 8.5 MB
+int reverse(int x){
+    long long reversed = 0;
+
+    while (x) {
+        int digit = x % 10;
+        reversed = reversed * 10 + digit;
+        x /= 10;
+        
+        if (reversed > INT_MAX || reversed < INT_MIN){
+            reversed = 0;
+            break;
+        }
+    }
+
+    return reversed;
+}
+
+// 0ms (beats 100%)
 // 8.6 MB
 int 
 revInt(int x) {
