@@ -4,6 +4,28 @@
 #include <string.h>
 #include <stdio.h>
 
+int 
+f_u_c(char* s) {
+	int char_count[123] = { 0 }; 
+	unsigned int len = strlen(s);
+	int ret = -1;
+
+	for (int i = 0; i < len; i++) {
+		char_count[s[i]]++;
+	}
+
+
+	for (int i = 0; i < len; i++) {
+		if (char_count[s[i]] == 1) {
+			ret = i;
+			break;
+		}
+	}
+
+	return ret;
+
+}
+
 int firstUniqeChar(char* s) {
     size_t len = strlen(s);
     int ret = -1;
