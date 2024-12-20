@@ -1,9 +1,11 @@
-// 5ms
-// 7.3 MB
+
 
 #include <string.h>
 #include <stdio.h>
 
+
+// 0ms (beats 100% of C submissions)
+// 9.8 MB
 int 
 f_u_c(char* s) {
 	int char_count[123] = { 0 }; 
@@ -26,6 +28,8 @@ f_u_c(char* s) {
 
 }
 
+// 5ms
+// 7.3 MB
 int firstUniqeChar(char* s) {
     size_t len = strlen(s);
     int ret = -1;
