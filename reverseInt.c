@@ -2,6 +2,25 @@
 #include <stdio.h>
 #include <limits.h>
 
+
+// 0ms (beats 100% of C submissions)
+// 8.4 MB
+int 
+r_i(int x) {
+   long long ret = x;
+	
+   ret = x % 10;
+   x /= 10;
+	
+   while (x) {
+	ret *= 10;
+	ret += x % 10;
+	x /= 10;
+   }
+	
+   return ret > INT_MAX || ret < INT_MIN ? 0 : ret;
+}
+
 // 0ms (beats 100%)
 // 8.5 MB
 int reverse(int x){
